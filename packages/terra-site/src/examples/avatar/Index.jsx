@@ -12,7 +12,8 @@ import AvatarSrc from '!raw-loader!terra-avatar/src/Avatar';
 // Example Files
 import AvatarUser from './AvatarUser';
 import AvatarFacility from './AvatarFacility';
-import AvatarInitials from './AvatarInitials';
+import AvatarTwoInitials from './AvatarTwoInitials';
+import AvatarThreeInitials from './AvatarThreeInitials';
 import AvatarImage from './AvatarImage';
 
 const AvatarExamples = () => (
@@ -24,8 +25,10 @@ const AvatarExamples = () => (
     <AvatarUser />
     <h2 id="facility">Facility</h2>
     <AvatarFacility />
-    <h2 id="initials">Initials</h2>
-    <AvatarInitials />
+    <h2 id="initials">Initials (2)</h2>
+    <AvatarTwoInitials />
+    <h2 id="initials">Initials (3)</h2>
+    <AvatarThreeInitials />
     <h2 id="image">Image</h2>
     <AvatarImage />
   </div>

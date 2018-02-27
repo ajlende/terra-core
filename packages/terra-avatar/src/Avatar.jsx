@@ -55,6 +55,12 @@ const Avatar = ({
     attributes.className,
   ]);
 
+  const AvatarTextClassNames = cx([
+    'avatar-text',
+    { 'avatar-text-small': initials !== undefined && initials.length === 3 },
+    { 'avatar-text-large': initials !== undefined && initials.length === 2 },
+  ]);
+
   const icon = (
     <div className={cx('avatar-icon')}>
       <svg className={cx(variant)} />
@@ -65,8 +71,8 @@ const Avatar = ({
     let avatarContent = null;
     if (image) {
       avatarContent = <TerraImage src={image} placeholder={icon} alt={alt} />;
-    } else if (initials) {
-      avatarContent = <text>{initials.toUpperCase()}</text>;
+    } else if (initials && (initials.length === 2 || initials.length === 3)) {
+      avatarContent = <text className={AvatarTextClassNames}>{initials.toUpperCase()}</text>;
     } else {
       avatarContent = icon;
     }

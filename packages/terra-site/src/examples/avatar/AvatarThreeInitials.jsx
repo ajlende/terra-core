@@ -1,8 +1,8 @@
 import React from 'react';
 import Avatar from '../../../../../packages/terra-avatar/src/Avatar';
 
-const AvatarUser = () => (
-  <Avatar />
+const AvatarThreeInitials = () => (
+  <Avatar initials="JSR" />
 );
 
-export default AvatarUser;
+export default AvatarThreeInitials;
