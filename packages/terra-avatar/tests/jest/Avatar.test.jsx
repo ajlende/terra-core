@@ -27,4 +27,16 @@ describe('Avatar', () => {
     const wrapper = render(avatar);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render fallback user avatar when invalid image is passed in with user variant', () => {
+    const avatar = <Avatar image="https://path/to/invalid_image.jpg" variant="user" />;
+    const wrapper = render(avatar);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render fallback facility avatar when invalid image is passed in with facility variant', () => {
+    const avatar = <Avatar image="https://path/to/invalid_image.jpg" variant="facility" />;
+    const wrapper = render(avatar);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

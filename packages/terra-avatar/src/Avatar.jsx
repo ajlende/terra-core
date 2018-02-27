@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import 'terra-base/lib/baseStyles';
+import TerraImage from 'terra-image';
 import styles from './Avatar.scss';
 
 const cx = classNames.bind(styles);
@@ -63,7 +64,7 @@ const Avatar = ({
   const AvatarContent = () => {
     let avatarContent = null;
     if (image) {
-      avatarContent = <img src={image} alt={alt} />;
+      avatarContent = <TerraImage src={image} placeholder={icon} alt={alt} />;
     } else if (initials) {
       avatarContent = <text>{initials.toUpperCase()}</text>;
     } else {
