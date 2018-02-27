@@ -22,11 +22,11 @@
     line-height: 0;
     
     &.avatar-text-large {
-      font-size: var(--terra-avatar-font-size-small, 1.571rem);
+      font-size: var(--terra-avatar-font-size-large, 1.571rem);
     }
     
     &.avatar-text-small {
-      font-size: var(--terra-avatar-font-size-small, 16px);
+      font-size: var(--terra-avatar-font-size-small, 1.143rem);
     }
   }
   

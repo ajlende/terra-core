@@ -16,8 +16,26 @@ describe('Avatar', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render intials avatar when initials are passed in', () => {
+  it('should render two intials avatar when two initials are passed in', () => {
     const avatar = <Avatar initials="JS" variant="user" />;
+    const wrapper = render(avatar);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render three intials avatar when three initials are passed in', () => {
+    const avatar = <Avatar initials="JSR" variant="user" />;
+    const wrapper = render(avatar);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render fallback user avatar when fewer than two initials are passed in and variant is user', () => {
+    const avatar = <Avatar initials="J" variant="user" />;
+    const wrapper = render(avatar);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render fallback facility avatar when more than three initials are passed in and variant is facility', () => {
+    const avatar = <Avatar initials="JSRP" variant="facility" />;
     const wrapper = render(avatar);
     expect(wrapper).toMatchSnapshot();
   });

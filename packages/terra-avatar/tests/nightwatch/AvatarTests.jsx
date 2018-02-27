@@ -8,7 +8,8 @@ const AvatarTests = () => (
       <li><Link to="/tests/avatar-tests/user">Avatar - User</Link></li>
       <li><Link to="/tests/avatar-tests/facility">Avatar - Facility</Link></li>
       <li><Link to="/tests/avatar-tests/image">Avatar - Image</Link></li>
-      <li><Link to="/tests/avatar-tests/initials">Avatar - Initials</Link></li>
+      <li><Link to="/tests/avatar-tests/two-initials">Avatar - Two Initials</Link></li>
+      <li><Link to="/tests/avatar-tests/three-initials">Avatar - Three Initials</Link></li>
     </ul>
   </div>
 );

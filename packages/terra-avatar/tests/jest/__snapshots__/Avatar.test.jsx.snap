@@ -43,6 +43,36 @@ exports[`Avatar should render fallback facility avatar when invalid image is pas
 </circle>
 `;
 
+exports[`Avatar should render fallback facility avatar when more than three initials are passed in and variant is facility 1`] = `
+<circle
+  aria-label="Avatar"
+  class="avatar"
+>
+  <div
+    class="avatar-icon"
+  >
+    <svg
+      class="facility"
+    />
+  </div>
+</circle>
+`;
+
+exports[`Avatar should render fallback user avatar when fewer than two initials are passed in and variant is user 1`] = `
+<circle
+  aria-label="Avatar"
+  class="avatar"
+>
+  <div
+    class="avatar-icon"
+  >
+    <svg
+      class="user"
+    />
+  </div>
+</circle>
+`;
+
 exports[`Avatar should render fallback user avatar when invalid image is passed in with user variant 1`] = `
 <circle
   aria-label="Avatar"
@@ -99,12 +129,27 @@ exports[`Avatar should render image avatar when image is passed in 1`] = `
 </circle>
 `;
 
-exports[`Avatar should render intials avatar when initials are passed in 1`] = `
+exports[`Avatar should render three intials avatar when three initials are passed in 1`] = `
 <circle
   aria-label="Avatar"
   class="avatar"
 >
-  <text>
+  <text
+    class="avatar-text avatar-text-small"
+  >
+    JSR
+  </text>
+</circle>
+`;
+
+exports[`Avatar should render two intials avatar when two initials are passed in 1`] = `
+<circle
+  aria-label="Avatar"
+  class="avatar"
+>
+  <text
+    class="avatar-text avatar-text-large"
+  >
     JS
   </text>
 </circle>
