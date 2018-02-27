@@ -1,6 +1,6 @@
 # Terra Avatar
 
-The terra-avatar component displays an avatar which can be either an image or svg icon. The avatar displays in a circular wrapper.
+The terra-avatar component displays an avatar which can be either an image or text. If neither an image or text is provided, a variant-based fallback icon is used. The avatar displays in a circular wrapper.
 
 ## Getting Started
 
@@ -13,7 +13,11 @@ The terra-avatar component displays an avatar which can be either an image or sv
 import React from 'react';
 import Avatar from 'terra-avatar';
 
-<Avatar {props...} />
+<Avatar
+  image="https://path/to/image.jpg"
+  alt="placeholder"
+  variant="user" 
+/>
 ```
 
 ## Component Features

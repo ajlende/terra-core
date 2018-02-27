@@ -3,6 +3,17 @@
 @import '~terra-mixins';
 
 @include cerner-mock-theme {
+  // terra-avatar
+  --terra-avatar-background-color: rgba(0, 0, 255, 0.5);
+  --terra-avatar-border: 0.07143rem solid rgb(0, 0, 255);
+  --terra-avatar-box-shadow: inset 0 0.07143rem 0.2143rem 5px rgba(255, 0, 0, 0.3);
+  --terra-avatar-color: rgb(0, 0, 255);
+  --terra-avatar-font-size: 2rem;
+  --terra-avatar-size: 5rem;
+  --terra-avatar-line-height: 5rem;
+  --terra-avatar-icon-facility: inline-svg("<svg data-name='Layer_1' xmlns='http://www.w3.org/2000/svg' fill='rgb(160, 32, 240)' height='46px' width='46px' viewBox='0 0 48 48'><path d='M33,20.2V12H15v8.2H9.8V48h12v-9h4.5v9h12V20.2H33z M17.2,42.8h-3V39h3V42.8z M17.2,33.8h-3V30h3V33.8z M25.5,33.8h-3V30h3 V33.8z M29.2,22.5h-3.8v3.8h-3v-3.8h-3.8v-3h3.8v-3.8h3v3.8h3.8V22.5z M33.8,42.8h-3V39h3V42.8z M33.8,33.8h-3V30h3V33.8z'/></svg>") no-repeat;
+  --terra-avatar-icon-user: inline-svg("<svg data-name='Layer_1' xmlns='http://www.w3.org/2000/svg' fill='rgb(160, 32, 240)' height='46px' width='46px' viewBox='0 0 48 48'><path d='M24,8.6c5.1,0,9.3,4.2,9.3,9.3s-4.2,9.3-9.3,9.3s-9.3-4.2-9.3-9.3C14.8,12.8,18.9,8.6,24,8.6z M40,48v-4.7 c0-7.6-6.1-13.8-13.7-13.8c0,0,0,0,0,0h-4.5C14.1,29.6,8,35.7,8,43.3c0,0,0,0,0,0V48H40z'/></svg>") no-repeat;
+
   // terra-divider
   --terra-divider-border-color: #582c83;
   --terra-divider-border-top-width: 0.357rem;
