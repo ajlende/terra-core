@@ -10,6 +10,7 @@ describe('Avatar', () => {
       '--terra-avatar-background-color': 'rgba(0, 0, 255, 0.5)',
       '--terra-avatar-border': '0.07143rem solid rgb(0, 0, 255)',
       '--terra-avatar-box-shadow': 'inset 0 0.07143rem 0.2143rem 5px rgba(255, 0, 0, 0.3)',
+      '--terra-avatar-icon-user': 'rgb(0, 100, 0)',
       '--terra-avatar-size': '5rem',
     });
 
@@ -24,10 +25,10 @@ describe('Avatar', () => {
     Terra.should.beAccessible({ selector: '#facility-avatar' });
     Terra.should.matchScreenshot({ selector: '#facility-avatar' });
     Terra.should.themeEachCustomProperty({
-      '--terra-avatar-icon-facility': 'rgb(0, 100, 0)',
       '--terra-avatar-background-color': 'rgba(0, 0, 255, 0.5)',
       '--terra-avatar-border': '0.07143rem solid rgb(0, 0, 255)',
       '--terra-avatar-box-shadow': 'inset 0 0.07143rem 0.2143rem 5px rgba(255, 0, 0, 0.3)',
+      '--terra-avatar-icon-facility': 'rgb(0, 0, 100)',
       '--terra-avatar-size': '5rem',
     });
 
