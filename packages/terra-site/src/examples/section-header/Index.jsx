@@ -11,12 +11,13 @@ import SectionHeaderSrc from '!raw-loader!terra-section-header/src/SectionHeader
 
 // Example Files
 import DefaultSectionHeader from './DefaultSectionHeader';
-import DefaultSectionHeaderSrc from '!raw-loader!./DefaultSectionHeader.jsx';
+import ClosedSectionHeader from './ClosedSectionHeader';
 
 const Examples = () => (
   <div>
     <h2>Examples</h2>
     <DefaultSectionHeader />
+    <ClosedSectionHeader />
   </div>
 );
 
