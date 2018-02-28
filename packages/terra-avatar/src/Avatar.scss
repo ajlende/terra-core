@@ -13,14 +13,12 @@
     display: flex;
     height: var(--terra-avatar-size, 3.429rem);
     justify-content: center;
-    line-height: var(--terra-avatar-line-height, 0.75);
+    line-height: 0;
     overflow: hidden;
     width: var(--terra-avatar-size, 3.429rem);
   }
   
   .avatar-text {
-    line-height: 0;
-    
     &.avatar-text-large {
       font-size: var(--terra-avatar-font-size-large, 1.571rem);
     }
@@ -31,11 +29,14 @@
   }
   
   .avatar-icon {
+    height: 100%;
+    width: 100%;
+    
     > svg {
       background-repeat: no-repeat;
       background-size: contain;
-      height: 3.286rem;
-      width: 3.286rem;
+      height: 100%;
+      width: 100%;
     }
     
     > .facility {
